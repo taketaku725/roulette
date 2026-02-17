@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ランダムルーレット</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="app">
+
+    <!-- タイトル -->
+    <header class="app-header">
+      <h1>ランダムルーレット</h1>
+    </header>
+
+    <!-- 結果表示 -->
+    <section class="result-section">
+      <p id="resultText"></p>
+    </section>
+
+    <!-- ルーレットエリア -->
+    <section class="roulette-section">
+      <div class="roulette-wrapper">
+        <div class="roulette" id="roulette">
+          <svg id="labelSvg" style="position:absolute; inset:0;"></svg>
+        </div>
+        <div class="pointer"></div>
+      </div>
+    </section>
+
+    <!-- 操作ボタン -->
+    <section class="control-section">
+      <button id="startButton">START</button>
+    </section>
+
+    <!-- 選択肢編集 -->
+    <section class="edit-section">
+      <h2>選択肢編集</h2>
+
+      <div class="item-input-area">
+        <input type="text" id="itemInput" placeholder="選択肢を入力">
+        <button id="addItemButton">追加</button>
+      </div>
+
+      <ul id="itemList"></ul>
+    </section>
+
+    <!-- テンプレート管理 -->
+    <section class="template-section">
+      <h2>テンプレート管理</h2>
+
+      <div class="template-save">
+        <input type="text" id="templateName" placeholder="テンプレート名">
+        <button id="saveTemplateButton">保存</button>
+      </div>
+
+      <div class="template-load">
+        <select id="templateSelect">
+          <option value="">テンプレートを選択</option>
+        </select>
+        <button id="loadTemplateButton">読込</button>
+        <button id="deleteTemplateButton">削除</button>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
