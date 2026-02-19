@@ -13,6 +13,10 @@ body {
   color: #111827;
 }
 
+html, body { 
+  touch-action: manipulation; /* ダブルタップズーム抑制 */
+}
+
 .app {
   max-width: 520px;
   margin: 40px auto;
@@ -275,3 +279,4 @@ button.spinning {
     width: 100%;
   }
 }
+
