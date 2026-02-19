@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
     svg.setAttribute("height", "100%");
 
 
-    const arcFactor = 0.95;
+    const arcFactor = 0.85;
     const textRadius = radius * arcFactor;
 
     items.forEach((item, index) => {
@@ -293,3 +293,4 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+
