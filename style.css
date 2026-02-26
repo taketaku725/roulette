@@ -55,8 +55,8 @@ html, body {
 }
 
 #resultText {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 
@@ -279,4 +279,5 @@ button.spinning {
     width: 100%;
   }
 }
+
 
