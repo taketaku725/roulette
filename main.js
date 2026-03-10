@@ -165,8 +165,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const randomIndex = Math.floor(Math.random() * items.length);
     const segmentAngle = 360 / items.length;
 
+    const margin = segmentAngle * 0.15;
+
+    // 扇の中でランダム位置
+    const offset = Math.random() * (segmentAngle - margin * 2);
+
     const targetAngle =
-      360 - (randomIndex * segmentAngle + segmentAngle / 2);
+      360 - (randomIndex * segmentAngle + offset);
 
     const extraSpins = 14 + Math.floor(Math.random() * 6);
     const totalRotation = 360 * extraSpins + targetAngle;
@@ -293,4 +298,5 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+
 
