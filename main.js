@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const randomIndex = Math.floor(Math.random() * items.length);
     const segmentAngle = 360 / items.length;
 
-    const margin = segmentAngle * 0.15;
+    const margin = segmentAngle * 0.1;
 
     // 扇の中でランダム位置
     const offset = Math.random() * (segmentAngle - margin * 2);
@@ -298,5 +298,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+
 
 
